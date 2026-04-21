@@ -3,9 +3,9 @@ Contributors: nitramix, martinvalchev
 Donate link: https://nitramix.com/donate/
 Tags: video gallery, video player, product video, for woocommerce, product page
 Requires at least: 5.3
-Tested up to: 6.9.1
+Tested up to: 6.9.4
 Requires PHP: 7.4
-Stable tag: 2.5
+Stable tag: 2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -107,6 +107,10 @@ The PRO version includes a Video Analytics dashboard that tracks how visitors in
 = Can I get advanced analytics on a Single Site license? =
 Yes! Single Site license holders can purchase the Advanced Analytics Add-on as a one-time payment from the Video Analytics dashboard. This unlocks all advanced features (device charts, engagement metrics, location analytics, heatmaps, and CSV export) without needing to upgrade your full license.
 
+== Videos ==
+
+[youtube https://youtu.be/9PNbRUShcRs]
+
 == Screenshots ==
 
 1. Settings
@@ -123,6 +127,12 @@ Yes! Single Site license holders can purchase the Advanced Analytics Add-on as a
 12. PRO - Custom SVG icon
 
 == Changelog ==
+
+= 1.6 =
+* **Fix:** Video playback stopping on desktop when mouse is idle or hovering over the video in Flatsome theme
+* **Added:** Added basic support for Astra theme
+* Tested with WordPress 6.9.4
+**Release date: April 21, 2026**
 
 = 2.5 =
 * **Added:** Product Gallery Block Support
