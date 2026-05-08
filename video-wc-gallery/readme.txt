@@ -1,23 +1,39 @@
-=== Video Gallery for WooCommerce ===
+=== Video Gallery for WooCommerce - Add Product Video & Featured Video ===
 Contributors: nitramix, martinvalchev
 Donate link: https://nitramix.com/donate/
-Tags: video gallery, video player, product video, for woocommerce, product page
+Tags: video gallery, featured video, product video, woocommerce, product gallery
 Requires at least: 5.3
 Tested up to: 6.9.4
 Requires PHP: 7.4
-Stable tag: 2.6
+Stable tag: 2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Video Gallery for WooCommerce: Add WordPress library videos to product pages with customization. Requires WooCommerce activation.
+Video Gallery for WooCommerce - add product video & featured video to the WooCommerce product gallery. Customize, boost sales. WooCommerce required.
 
 == Description ==
 
-Introducing the Video Gallery for WooCommerce plugin - the perfect solution for businesses looking to enhance their product pages with visually engaging content. With this powerful plugin, adding video files from the WP library is a breeze, and they will be beautifully showcased on the product page. The plugin comes packed with a variety of additional options to help customize the display of videos on your site, including the ability to move videos around on the page to your desired position. You can also change the video file icon and color to match your brand's aesthetic. Video clip settings are fully customizable, giving you control over autoplay, sound, and loop options, as well as the ability to show or hide video control options. Please note that in order to use this plugin, the Woocommerce plugin must be activated. Upgrade your product pages today with Video Gallery for WooCommerce!
+**Video Gallery for WooCommerce** is a simple video gallery plugin for WooCommerce stores. It lets you add a product video or featured video to any WooCommerce product gallery in seconds. No code, no shortcodes, no theme edits.
 
-**🚀 Looking for more features?** Check out our PRO version with YouTube integration, unlimited videos, custom SVG icons, SEO optimization, video analytics, and priority support!
+Pick any clip from the WordPress media library. The video shows up right next to your product images, inside the WooCommerce product gallery. Set autoplay, sound, and loop. Show or hide the video controls. WooCommerce must be active for the plugin to work.
 
-The options for this plugin include:
+Upgrade your product pages today with Video Gallery for WooCommerce!
+
+**🚀 Looking for more features?** Check out our PRO version with YouTube integration, unlimited videos, custom SVG icons, SEO optimization, video analytics, sticky video on scroll, and priority support!
+
+= Product Video Gallery Features =
+
+Turn every WooCommerce product gallery into a product video gallery. Add an MP4 or MOV product video from the WordPress media library. Drag and drop to reorder your clips. Shoppers see the item in motion, right next to the product images.
+
+= Featured Video for WooCommerce Products =
+
+Use any uploaded clip as a featured video for your WooCommerce products. The featured video plays inside the product gallery through the built-in VideoJS player. It works smoothly on desktop and mobile. You control autoplay, mute, and loop for each product.
+
+= WooCommerce Product Gallery Integration =
+
+Video Gallery for WooCommerce plugs into the native WooCommerce product gallery. It also supports the new WooCommerce Product Gallery Block. No gallery rebuild. No shortcodes. Install the plugin, add a product video, and you are live.
+
+= Key Features =
 
 *   Add video files from the WP library to your product pages
 *   Move videos around on the product page to your desired position
@@ -28,7 +44,7 @@ The options for this plugin include:
 *   Customize your video gallery to match your brand's aesthetic
 *   Manage your media library with ease
 *   Increase conversions by showcasing your products with multimedia content
-*   Compatible with Woocommerce plugin to ensure seamless integration with your online store
+*   Compatible with WooCommerce for seamless integration with your online store
 
 **FREE Version Limitations:**
 *   Limited to 20 products with video
@@ -51,6 +67,7 @@ Get access to advanced features including up to 6 videos per product, YouTube in
 *   **SEO settings** - Custom titles and descriptions per video
 *   **Video Analytics (Basic)** - Track video views and watch time per product *(Single Site plan)*
 *   **Video Analytics (Advanced)** - Device charts, engagement metrics, location analytics, browser/OS tracking, heatmap visualization, and CSV export *(Multiple & Unlimited plans, or Advanced Analytics Add-on)*
+*   **Sticky video on scroll** - When the active gallery slide leaves the viewport, the video stays visible in a small floating player anchored to the corner of your choice (top-left, top-right, bottom-left, bottom-right). Adapts to the source video's aspect ratio so the whole frame is always visible.
 *   **Premium support** - Priority email support
 
 **[Purchase PRO Version](https://nitramix.com/projects/video-gallery-for-woocommerce/)**
@@ -61,11 +78,11 @@ The helper libraries plugin uses the following:
 *   [SweetAlert2 v11.4.8](https://sweetalert2.github.io/)
 *   [VideoJS v7.15.4](https://videojs.com/)
 
-Notes:
+= Requirements =
 
-*   Video Gallery for WooCommerce requires the Woocommerce plugin to be activated in order to function properly. If you do not have Woocommerce installed, you will need to install and activate it before using Video Gallery for WooCommerce.
-*   The plugin supports a wide range of video file formats, but it is important to ensure that your videos are in a format that is supported by WordPress. Commonly used formats such as MP4 and MOV are typically supported.
-*   The plugin works with WooCommerce base elements. Added support for someone on known themes. If you have a problem with a theme, write to support to check if it can be made compatible.
+*   WooCommerce must be installed and activated. Install it first if you do not have it.
+*   Video files must be in a WordPress-supported format. MP4 and MOV work best.
+*   The plugin works with the default WooCommerce templates. We add extra support for known themes. If your theme breaks, contact support and we will check if we can make it compatible.
 
 == Installation ==
 
@@ -90,24 +107,46 @@ How to add a video to a product
 
 = What is Video Gallery for WooCommerce? =
 Video Gallery for WooCommerce is a plugin that allows you to add video files from your WordPress (WP) library to your product pages on your website. It comes with a range of customization options to enhance your video display and improve user engagement.
+
+= How do I add a product video to a WooCommerce product? =
+Open the product in WooCommerce. Go to the "Video Gallery for WooCommerce" tab in the Product Data box. Pick a video from the WP media library and click Update. The product video shows up inside the WooCommerce product gallery on the front end. No shortcodes, no theme edits.
+
+= Does the plugin work with the native WooCommerce product gallery? =
+Yes. Video Gallery for WooCommerce works with the default WooCommerce product gallery. It also supports the new WooCommerce Product Gallery Block. Your product video sits next to your product images, without breaking your theme's layout.
+
 = What types of video files can I use with Video Gallery for WooCommerce? =
-You can use any video file format that is supported by WordPress. This includes popular formats such as MP4 and MOV.
+You can use any video format supported by WordPress. The most common ones are MP4 and MOV.
+
 = Can I customize the display of my video files? =
-Yes, Video Gallery for WooCommerce comes with a variety of customization options, such as the ability to change the video file icon and color, and move videos around on the product page to your desired position.
+Yes. You can change the video icon and color. You can also move each video to any position on the product page.
+
 = Can I control how my video clips play? =
-Yes, you can choose from a range of video clip settings, such as autoplay, sound, and loop options, as well as the ability to show or hide video control options.
+Yes. Each clip has its own settings for autoplay, sound, and loop. You can also show or hide the video controls.
+
 = Is Video Gallery for WooCommerce compatible with other WordPress themes and plugins? =
-Video Gallery for WooCommerce is compatible with most WordPress themes and plugins, although some may require additional customization. It is designed to seamlessly integrate with Woocommerce, ensuring a smooth user experience.
+Yes. Video Gallery for WooCommerce works with most WordPress themes and plugins. Some themes may need small tweaks. The plugin is built to integrate smoothly with WooCommerce.
+
+= Can I set a featured video for each product? =
+Yes. Any uploaded clip can be used as a featured video for a WooCommerce product. The featured video loads inside the product gallery. It plays through the built-in VideoJS player, with full control over autoplay, mute, and loop.
+
 = Is there a PRO version with more features? =
-Yes! The PRO version unlocks advanced features including unlimited products with video, up to 6 videos per product, YouTube integration, custom SVG icons, optimized thumbnails, SEO settings, video analytics, and priority support. Visit [Video Gallery for WooCommerce PRO](https://nitramix.com/projects/video-gallery-for-woocommerce/) to learn more and purchase.
+Yes. The PRO version unlocks unlimited products with video and up to 6 videos per product. It also adds YouTube integration, custom SVG icons, optimized thumbnails, SEO settings, and video analytics. PRO users get priority support. Visit [Video Gallery for WooCommerce PRO](https://nitramix.com/projects/video-gallery-for-woocommerce/) to learn more.
+
 = What's the difference between FREE and PRO versions? =
-The FREE version supports basic video functionality limited to 20 products with video and up to 2 videos per product. The PRO version includes unlimited videos, YouTube support, custom icons, advanced SEO, video analytics, and premium support.
+The FREE version is limited to 20 products with video and 2 videos per product. The PRO version is unlimited. PRO also adds YouTube support, custom icons, advanced SEO, video analytics, and premium support.
+
 = What is Video Analytics and how does it work? =
-The PRO version includes a Video Analytics dashboard that tracks how visitors interact with your product videos. Enable it from Video Gallery > Settings. All PRO plans include basic analytics (views, watch time). Advanced analytics features (device charts, engagement metrics, location data, heatmap visualization, CSV export) are included in Multiple Sites and Unlimited Sites plans, or available as a one-time Advanced Analytics Add-on for Single Site license holders.
+The PRO version includes a Video Analytics dashboard. It tracks how visitors interact with your product videos. Enable it from Video Gallery > Settings. All PRO plans include basic analytics (views and watch time). Advanced analytics (device charts, engagement, location data, heatmaps, CSV export) are part of the Multiple Sites and Unlimited Sites plans. Single Site holders can unlock them with the one-time Advanced Analytics Add-on.
+
 = Can I get advanced analytics on a Single Site license? =
-Yes! Single Site license holders can purchase the Advanced Analytics Add-on as a one-time payment from the Video Analytics dashboard. This unlocks all advanced features (device charts, engagement metrics, location analytics, heatmaps, and CSV export) without needing to upgrade your full license.
+Yes. Buy the Advanced Analytics Add-on as a one-time payment from the Video Analytics dashboard. It unlocks device charts, engagement metrics, location analytics, heatmaps, and CSV export. No need to upgrade your full license.
+
+= What is the Sticky video on scroll feature? =
+Sticky video on scroll is a PRO feature. When a shopper scrolls past the active product video in the gallery, the video stays visible in a small floating player anchored to the corner of the screen you pick - Top left, Top right, Bottom left, or Bottom right. Playback continues exactly where it was: if the video was playing it keeps playing, if paused it stays paused. The floating player adapts to the source video's aspect ratio, so 16:9, 4:3, vertical (9:16), and square clips all show without cropping. A small × button sends the video back to the gallery on demand, and scrolling back up to the gallery returns it automatically. Pick the corner from Video Gallery > Settings.
 
 == Videos ==
+
+Watch Video Gallery for WooCommerce in action and see how to add a product video to your WooCommerce product gallery:
 
 [youtube https://youtu.be/9PNbRUShcRs]
 
@@ -125,10 +164,17 @@ Yes! Single Site license holders can purchase the Advanced Analytics Add-on as a
 10. PRO - Video SEO settings
 11. PRO - Thumbnails optimization settings
 12. PRO - Custom SVG icon
+13. PRO - Sticky video on scroll
 
 == Changelog ==
 
-= 1.6 =
+= 2.7 =
+* **Added:** New "Sticky video on scroll" PRO upsell setting on the Video Gallery settings page, with a visual position picker (preview cards for Top left, Top right, Bottom left, Bottom right). The actual sticky behaviour ships with the PRO version - on the product page, when the active gallery slide leaves the viewport, the first/active video flies into the chosen corner with a smooth animation.
+* **Updated:** Pricing modal now shows "1 year of updates" (instead of "Free updates") with a hover tooltip that explains how updates work - free updates for 1 year from purchase, the plugin keeps working forever after expiry, optional renewal to unlock new versions.
+* Tested with WordPress 6.9.4
+**Release date: May 8, 2026**
+
+= 2.6 =
 * **Fix:** Video playback stopping on desktop when mouse is idle or hovering over the video in Flatsome theme
 * **Added:** Added basic support for Astra theme
 * Tested with WordPress 6.9.4
