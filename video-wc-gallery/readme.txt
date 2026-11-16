@@ -5,7 +5,7 @@ Tags: video gallery, featured video, product video, woocommerce, product gallery
 Requires at least: 5.3
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.13
+Stable tag: 2.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,6 +173,10 @@ Watch Video Gallery for WooCommerce in action and see how to add a product video
 13. PRO - Sticky video on scroll
 
 == Changelog ==
+
+= 2.14 =
+* **Fix:** Visual fix for theme Blocksy
+**Release date: November 16, 2026**
 
 = 2.13 =
 * **Fix:** On products with a video, the image lightbox could not be closed by clicking outside the image when another plugin (e.g. YITH Questions and Answers) also loaded WooCommerce's gallery script.

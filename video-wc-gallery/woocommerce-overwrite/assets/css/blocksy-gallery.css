@@ -63,6 +63,15 @@
 .woocommerce-product-gallery .flex-direction-nav .flex-next {
     inset-inline-end: 20px;
 }
+.woocommerce-product-gallery.images img {
+    opacity: 1;
+}
+.woocommerce div.product div.images .flex-control-thumbs li .vwg-video-wrapper {
+    opacity: 1 !important;
+}
+.vwg-video-wrapper img {
+    object-fit: cover;
+}
 /* FlexSlider disables one arrow on the first/last slide. Blocksy's own arrows
    never change appearance, so keep ours looking identical. */
 .woocommerce-product-gallery .flex-direction-nav a.flex-disabled {

@@ -1216,7 +1216,7 @@ add_action( 'admin_footer-post-new.php', 'vwg_add_video_upload_script' );
 /**
  * Add custom style and scripts in product page (IMPORTANT)
  *
- * @since 2.12
+ * @since 2.14
  */
 function vwg_add_custom_style_and_scripts_product_page() {
     if ( is_product() ) {
@@ -1275,7 +1275,7 @@ function vwg_add_custom_style_and_scripts_product_page() {
             .vwg-video-wrapper img { width: 100%; height: 100%; margin: auto !important; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) }
             /*.vwg-video-wrapper img.vwg-generated-thumb { width: 100% !important; height: 100% !important;}*/
             .vwg-video-wrapper i { font-size: 24px; color: <?=esc_attr($iconColor)?>; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); }
-            .woocommerce div.product div.images .flex-control-thumbs li .vwg-video-wrapper {cursor: pointer;opacity: .5;margin: 0;}
+            .woocommerce div.product div.images .flex-control-thumbs li .vwg-video-wrapper {cursor: pointer; /* opacity: .5;*/ margin: 0;}
             .woocommerce div.product div.images .flex-control-thumbs li .vwg-video-wrapper:hover, .woocommerce div.product div.images .flex-control-thumbs li .vwg-video-wrapper.flex-active {opacity: 1;}
 
             /* {{ ! }} */
