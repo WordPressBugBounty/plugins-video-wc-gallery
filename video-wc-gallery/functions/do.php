@@ -2059,6 +2059,110 @@ function vwg_pml() {
 }
 
 /**
+ * @since 2.15
+ * @param WC_Product $duplicate 
+ * @param WC_Product $product
+ */
+function vwg_limit_videos_on_duplicate( $duplicate, $product ) {
+    if ( vwg_is_pro_addon() ) {
+        return;
+    }
+
+    $videos = maybe_unserialize( $product->get_meta( 'vwg_video_url', true ) );
+    if ( empty( $videos ) || ! is_array( $videos ) ) {
+        return; 
+    }
+
+    if ( vwg_pvc() < vwg_pml() ) {
+        return; 
+    }
+
+    $duplicate->delete_meta_data( 'vwg_video_url' );
+    $duplicate->delete_meta_data( 'vwg_video_seo_settings' );
+
+    // WooCommerce redirects to the copy's edit screen. Flag it for the notice there.
+    set_transient( 'vwg_dup_videos_skipped_' . get_current_user_id(), 1, MINUTE_IN_SECONDS * 5 );
+}
+add_action( 'woocommerce_product_duplicate_before_save', 'vwg_limit_videos_on_duplicate', 10, 2 );
+
+/**
+ * Notice shown after a duplicate was created without its videos.
+ *
+ * @since 2.15
+ */
+function vwg_duplicate_videos_skipped_notice() {
+    $key = 'vwg_dup_videos_skipped_' . get_current_user_id();
+    if ( ! get_transient( $key ) ) {
+        return;
+    }
+    delete_transient( $key );
+    ?>
+    <div class="notice notice-warning is-dismissible" style="border-left-color: #6C5CE7;">
+        <p>
+            <strong><?php echo esc_html__( 'Video Gallery for WooCommerce:', 'video-wc-gallery' ); ?></strong>
+            <?php
+            printf(
+                /* translators: %d: maximum number of products with videos in the free version */
+                esc_html__( 'The product was duplicated without its videos, because you have reached the maximum limit of %d products with videos in the free version.', 'video-wc-gallery' ),
+                intval( vwg_pml() )
+            );
+            ?>
+        </p>
+        <p>
+            <?php echo esc_html__( 'Upgrade to PRO for unlimited products with videos!', 'video-wc-gallery' ); ?>
+            <a href="https://nitramix.com/projects/video-gallery-for-woocommerce" target="_blank" class="button button-primary" style="margin-left: 8px; background-color: #6C5CE7; border-color: #6C5CE7;"><?php echo esc_html__( 'View Plans', 'video-wc-gallery' ); ?></a>
+        </p>
+    </div>
+    <?php
+}
+add_action( 'admin_notices', 'vwg_duplicate_videos_skipped_notice' );
+
+/**
+ * Remove a video from every product when it is deleted from the Media Library.
+ *
+ * @since 2.15
+ * @param int $attachment_id The attachment being deleted.
+ */
+function vwg_remove_deleted_video_from_products( $attachment_id ) {
+    $attachment_id = (int) $attachment_id;
+    if ( $attachment_id <= 0 ) {
+        return;
+    }
+
+    $products = get_posts( array(
+        'post_type'        => 'product',
+        'post_status'      => array_keys( get_post_stati() ),
+        'posts_per_page'   => -1,
+        'fields'           => 'ids',
+        'suppress_filters' => true,
+        'meta_query'       => array(
+            array(
+                'key'     => 'vwg_video_url',
+                'value'   => 'i:' . $attachment_id . ';a:',
+                'compare' => 'LIKE',
+            ),
+        ),
+    ) );
+
+    foreach ( $products as $product_id ) {
+        $videos = maybe_unserialize( get_post_meta( $product_id, 'vwg_video_url', true ) );
+        if ( ! is_array( $videos ) || ! isset( $videos[ $attachment_id ] ) ) {
+            continue;
+        }
+
+        unset( $videos[ $attachment_id ] );
+        update_post_meta( $product_id, 'vwg_video_url', ! empty( $videos ) ? $videos : '' );
+
+        $seo = get_post_meta( $product_id, 'vwg_video_seo_settings', true );
+        if ( is_array( $seo ) && isset( $seo[ $attachment_id ] ) ) {
+            unset( $seo[ $attachment_id ] );
+            update_post_meta( $product_id, 'vwg_video_seo_settings', $seo );
+        }
+    }
+}
+add_action( 'delete_attachment', 'vwg_remove_deleted_video_from_products' );
+
+/**
  * 
  * @since 2.0
  * @return int

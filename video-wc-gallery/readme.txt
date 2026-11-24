@@ -5,7 +5,7 @@ Tags: video gallery, featured video, product video, woocommerce, product gallery
 Requires at least: 5.3
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.14
+Stable tag: 2.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,6 +173,11 @@ Watch Video Gallery for WooCommerce in action and see how to add a product video
 13. PRO - Sticky video on scroll
 
 == Changelog ==
+
+= 2.15 =
+* **Fix:** Videos deleted from the Media Library are now removed from products automatically.
+* **Improvement:** Better handling of videos when duplicating products.
+**Release date: November 24, 2026**
 
 = 2.14 =
 * **Fix:** Visual fix for theme Blocksy
